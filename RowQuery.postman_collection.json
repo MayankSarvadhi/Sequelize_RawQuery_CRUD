@@ -1,0 +1,514 @@
+{
+	"info": {
+		"_postman_id": "710d7bc3-21ee-4285-ab57-57d63fdf0c8f",
+		"name": "RowQuery",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28042243"
+	},
+	"item": [
+		{
+			"name": "Team",
+			"item": [
+				{
+					"name": "Add Team",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Name\" : \"mayank123\",\n    \"CoachName\":\"abc\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ROWURL}}/Team",
+							"host": [
+								"{{ROWURL}}"
+							],
+							"path": [
+								"Team"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "addTeam",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"Name\" : \"mayank123\",\n    \"CoachName\":\"abc\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{ROWURL}}/Team",
+									"host": [
+										"{{ROWURL}}"
+									],
+									"path": [
+										"Team"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "186"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"ba-O5JvFK50wMVM+tdcC9nkRUC2tKs\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 27 Jun 2023 11:33:14 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"Success\": true,\n    \"data\": [\n        {\n            \"id\": 5,\n            \"Name\": \"mayank123\",\n            \"CoachName\": \"abc\",\n            \"createdAt\": \"2023-06-27T11:33:14.088Z\",\n            \"updatedAt\": \"2023-06-27T11:33:14.088Z\"\n        }\n    ],\n    \"Message\": \"Data SuccessFully insert\"\n}"
+						}
+					]
+				},
+				{
+					"name": "DeleteTeam",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{ROWURL}}/Team/1",
+							"host": [
+								"{{ROWURL}}"
+							],
+							"path": [
+								"Team",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "DeleteTeam",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{ROWURL}}/Team/1",
+									"host": [
+										"{{ROWURL}}"
+									],
+									"path": [
+										"Team",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "182"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b6-+CvpEs29pyehllgRZEz0ZIxLtc0\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 27 Jun 2023 12:02:53 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"Success\": true,\n    \"data\": {\n        \"id\": 1,\n        \"Name\": \"Mayank\",\n        \"CoachName\": \"abc\",\n        \"createdAt\": \"2023-06-27T11:30:14.356Z\",\n        \"updatedAt\": \"2023-06-27T11:30:14.356Z\"\n    },\n    \"Message\": \"Data SuccessFully Deleted\"\n}"
+						}
+					]
+				},
+				{
+					"name": "UpdateTeam",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Name\": \"Bhargav3\",\n    \"CoachName\": \"bhargav@gmailcom\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ROWURL}}/Team/13213",
+							"host": [
+								"{{ROWURL}}"
+							],
+							"path": [
+								"Team",
+								"13213"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"Name\": \"Bhargav3\",\n    \"CoachName\": \"bhargav@gmailcom\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{ROWURL}}/Team/2",
+									"host": [
+										"{{ROWURL}}"
+									],
+									"path": [
+										"Team",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "198"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"c6-8umuaGCyeohPJdJX0Kz4U8cAlao\""
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 27 Jun 2023 12:12:36 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"Success\": true,\n    \"data\": [\n        {\n            \"id\": 2,\n            \"Name\": \"Bhargav3\",\n            \"CoachName\": \"bhargav@gmailcom\",\n            \"createdAt\": \"2023-06-27T11:31:04.245Z\",\n            \"updatedAt\": \"2023-06-27T11:31:04.245Z\"\n        }\n    ],\n    \"Message\": \"Data SuccessFully Update\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Player",
+			"item": [
+				{
+					"name": "AddPlayer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Name\":\"Ms Dhoni\",\n    \"Type\":\"batsman\",\n    \"Age\":12\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ROWURL}}/Player",
+							"host": [
+								"{{ROWURL}}"
+							],
+							"path": [
+								"Player"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "addPlayer",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"Name\":\"Ms Dhoni\",\n    \"Type\":\"batsman\",\n    \"Age\":12\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{ROWURL}}/Player",
+									"host": [
+										"{{ROWURL}}"
+									],
+									"path": [
+										"Player"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "195"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"c3-UYJnya81X1ORhLa2UaCN/hxESN0\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 28 Jun 2023 04:04:35 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"Success\": true,\n    \"data\": [\n        {\n            \"id\": 8,\n            \"Name\": \"Ms Dhoni\",\n            \"Type\": \"batsman\",\n            \"Age\": \"12\",\n            \"createdAt\": \"2023-06-28T04:04:35.450Z\",\n            \"updatedAt\": \"2023-06-28T04:04:35.450Z\"\n        }\n    ],\n    \"Message\": \"Data SuccessFully insert\"\n}"
+						}
+					]
+				},
+				{
+					"name": "DeletePlayer",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{ROWURL}}/Player/2",
+							"host": [
+								"{{ROWURL}}"
+							],
+							"path": [
+								"Player",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "delete",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{ROWURL}}/Player/2",
+									"host": [
+										"{{ROWURL}}"
+									],
+									"path": [
+										"Player",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "194"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"c2-XXArU8ejoJVaXC+dtn+a7hp3vHM\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 28 Jun 2023 04:07:07 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"Success\": true,\n    \"data\": {\n        \"id\": 2,\n        \"Name\": \"Ms Dhoni\",\n        \"Type\": \"batsman\",\n        \"Age\": \"45\",\n        \"createdAt\": \"2023-06-28T03:46:28.306Z\",\n        \"updatedAt\": \"2023-06-28T03:46:28.306Z\"\n    },\n    \"Message\": \"Data SuccessFully Deleted\"\n}"
+						}
+					]
+				},
+				{
+					"name": "updatePlayer",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"Name\":\"Ms Dhoni\",\n    \"Type\":\"bowler\",\n    \"Age\":12\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{ROWURL}}/Player/3",
+							"host": [
+								"{{ROWURL}}"
+							],
+							"path": [
+								"Player",
+								"3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "updatePlayer",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"Name\":\"Ms Dhoni\",\n    \"Type\":\"bowler\",\n    \"Age\":12\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{ROWURL}}/Player/3",
+									"host": [
+										"{{ROWURL}}"
+									],
+									"path": [
+										"Player",
+										"3"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "194"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"c2-MiKK9DhmbGNau0a3vrf+uHup+1E\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 28 Jun 2023 04:12:36 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"Success\": true,\n    \"data\": [\n        {\n            \"id\": 3,\n            \"Name\": \"Ms Dhoni\",\n            \"Type\": \"bowler\",\n            \"Age\": \"12\",\n            \"createdAt\": \"2023-06-28T03:46:47.107Z\",\n            \"updatedAt\": \"2023-06-28T03:46:47.107Z\"\n        }\n    ],\n    \"Message\": \"Data SuccessFully Update\"\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
