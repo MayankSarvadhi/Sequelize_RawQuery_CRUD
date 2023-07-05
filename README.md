@@ -1,4 +1,4 @@
-# Sequelize_RowQuery_CRUD 
+# Sequelize_RawQuery_CRUD 
 - CRUD about Cricket Teams And Cricket Players
 
 ## Project Overview
